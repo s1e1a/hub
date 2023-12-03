@@ -1,0 +1,35 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "METEOR HUB☄️ [BETA]", HidePremium = false, IntroText = "METEOR LANDING!", SaveConfig = true, ConfigFolder = "Default"})
+
+OrionLib:MakeNotification({
+	Name = "Hey!",
+	Content = "This hub made by sea____. on discord.",
+	Image = "rbxassetid://4483345998",
+	Time = 8
+})
+
+OrionLib:MakeNotification({
+	Name = "Please",
+	Content = "Report any bug.",
+	Image = "rbxassetid://4483345998",
+	Time = 8
+})
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Main"
+})
+
+Tab:AddButton({
+	Name = "Infinite yield",
+	Callback = function()
+      		print("loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()")
+  	end    
+})
+
+OrionLib:Init()
